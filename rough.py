@@ -9,3 +9,7 @@ lst.clear()
 print(lst)
 my_str = my_str.capitalize()
 print(my_str)
+print("\n")
+
+from OOPS_Project import Chatbook
+obj = Chatbook()

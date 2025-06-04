@@ -1,7 +1,7 @@
 class Chatbook:
     def __init__(self):
-        self.username = " "
-        self.password = " "
+        self.username = ""
+        self.password = ""
         self.loggedin = False
         self.menu()
 
@@ -19,9 +19,9 @@ class Chatbook:
         elif user_input == "2":
             self.signin()
         elif user_input == "3":
-            pass
+            self.post()
         elif user_input == "4":
-            pass
+            self.sendmsg()
         else:
             exit()
 
@@ -35,12 +35,12 @@ class Chatbook:
         self.menu()
 
     def signin(self):
-        if self.username == "" and self.password == "":
+        if self.username=='' and self.password=='':
             print("Plese sign up first by processing 1 in the main menu")
         else:
             uname = input("Enter your email id/username here : ")
             pwd = input("Enter your password here : ")
-            if self.username == uname and self.password == pwd:
+            if self.username==uname and self.password==pwd:
                 print("You have signed in successfully !!")
                 self.loggedin = True
             else:
@@ -50,4 +50,26 @@ class Chatbook:
         self.menu()
 
 
-obj = Chatbook()
+    def post(self):
+        if self.loggedin == True:
+            txt = input("Write your post here: ")
+            print(f"Your following content has been posted: {txt}")
+        else:
+            print("You need to sign in first to write a post.")
+        print("\n")
+        self.menu()
+
+
+    def sendmsg(self):
+        if self.loggedin == True:
+            txt = input("Enter your message here : ")
+            frnd = input("whom to send the message? : ")
+            print(f"Your message has been sent to {frnd}")
+        else:
+            print("You need to sign in first to send message to your friend !! ")
+        print("\n")
+        self.menu()
+        
+
+
+# obj = Chatbook()
