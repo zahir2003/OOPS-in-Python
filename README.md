@@ -339,7 +339,7 @@ c.display()
 
 ## 🎯 **Conclusion**
 
-This repository demonstrates **all core OOPS concepts in Python**, explained with **simple, structured examples** to solidify your understanding and impress recruiters in interviews and real-world coding assessments.
+This repository demonstrates **all core OOPS concepts in Python**, explained with **simple, structured examples** to solidify your understanding and real-world coding assessments.
 
 ---
 
